@@ -1,0 +1,10 @@
+{
+  "name": "MAHRIO-static-mysql",
+  "version": "0.0.1",
+  "dependencies": {
+    "mahrio": "latest"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
