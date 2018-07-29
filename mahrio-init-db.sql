@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.17, for macos10.12 (x86_64)
 --
--- Host: 192.168.0.122    Database: finance_data
+-- Host: macbookpro    Database: mahrio
 -- ------------------------------------------------------
 -- Server version	5.7.22-0ubuntu0.16.04.1
 
