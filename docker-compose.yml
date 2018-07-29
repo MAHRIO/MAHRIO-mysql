@@ -9,9 +9,16 @@ services:
     ports:
       - "6085:6085"
     restart: always
+    depends_on:
+      - mahrio-mysqldb
 
-  db:
-    image: mysql
+  mahrio-mysqldb:
+    image: mysql:8
+    container_name: mahrio-mysqldb
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mahrio-init-db.sql:/docker-entrypoint-initdb.d/mahrio-init-db.sql
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
